@@ -11,7 +11,7 @@
 
 body {
 	color: white;
-	background: black;
+	background: #D6E6FF;
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 }
 
@@ -115,58 +115,98 @@ nav ul li a {
 
 #container {
 	min-height: 100%;
-}
-
-#wrapper {
-	background: url("Photo/Menu.jpg") no-repeat;
+	background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("Photo/Bg.jpg") no-repeat;
 	background-size: cover;
-	height: 100vh;
 }
 
-#wrapper .center-text {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	user-select: none;
-}
-
-.center-text h1 {
+#content {
+	overflow: auto;
 	color: white;
-	font-size: 70px;
-	font-weight: bold;
-	width: 900px;
-	text-align: center;
+	padding-bottom: 100px;
 }
 
-.center-text h2 {
+h1 {
+	text-align: center;
+	padding: 50px;
+}
+
+.register {
+	background: transparent;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
 	color: white;
-	font-size: 70px;
-	font-weight: bold;
-	width: 860px;
-	text-align: center;
-}
-
-.center-text .btn {
-	margin: 35px 43%;
-}
-
-.btn button {
-	height: 50px;
-	width: 150px;
 	font-size: 18px;
-	font-weight: bold;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+#register {
+	margin-left: 50px;
+}
+
+label {
 	color: white;
-	background: red;
-	border: 1px solid #cc0000;
-	outline: none;
+	font-style: italic;
+}
+
+#name {
+	width: 380px;
+	border: none;
+	border-radius: 3px;
+	outline: 0;
+	padding: 7px;
+}
+
+ .text {
+	font-size: 1.0625rem;
+	margin-bottom: 2px;
+	color: white;
+}
+
+.request .msg {
+	margin-top: 10px;
+}
+
+.request textarea {
+	width: 380px;
+	font-size: 1.0625rem;
+	background: white;
+	padding-left: 10px;
+	border: 1px solid #222222;
+}
+
+.request textarea:focus {
+	outline-color: #3498db;
+}
+
+
+#ph {
+	width: 65px;
+	padding: 7px;
+	border: none;
+	border-radius: 3px;
+	outline: 0;
+}
+
+.sub {
+	width: 200px;
+	padding: 7px;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 600;
+	border: none;
+	border-radius: 3px;
+	outline: 0;
 	cursor: pointer;
-	border-radius: 25px;
+}
+
+.sub:hover {
+	background: red;
 }
 
 #footer {
 	position: relative;
-	margin-top: -100px;
 	clear: both;
 }
 

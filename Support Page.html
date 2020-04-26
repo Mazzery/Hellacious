@@ -2,10 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="Main Page.css" type="text/css">
 	<title>Inazuma</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="../Header/New Logo.png">
+	<link rel="stylesheet" href="Support Page.css" type="text/css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
 			<label for="check" class="checkbutton">
 				<h3>Menu</h3>
 			</label>
-			<a href="Main Page.html"><img src="../Header/Inazuma.png" alt="Logo" class="logo"></a>
+			<a href="../Main Page/Main Page.html"><img src="../Header/Inazuma.png" alt="Logo" class="logo"></a>
 			<ul class="nav-menu">
 				<li><a href="../Content Page/Content Page.html" class="nav-item">Content</a></li>
 				<li><a href="../Request Page/Request Page.html" class="nav-item">Request</a></li>
@@ -27,12 +27,33 @@
 		</nav>
 	</header>
 	<div id="container">
-		<div id="wrapper">
-			<div class="center-text">
-				<h1>Welcome To Inazuma</h1>
-				<h2>Learn New Things</h2>
-				<div class="btn">
-					<button>Explore</button>
+		<div id="main-content">
+			<div>
+				<h2>Feedback</h2>
+				<div>
+					<h5>Please write your feedback below</h5>
+					<form method="post" id="message">
+						<input type="text" name="Fname" placeholder="Enter Title" class="title" required>
+						<br>
+						<br>
+						<textarea></textarea>
+						<br>
+						<button type="submit" class="btn">Submit</button>
+					</form>
+					<div class="faq">
+						<h3>List Feedback</h3>
+						<br>
+						<table>
+							<tr>
+							  <th>Title</th>
+							  <th>Feedback</th>
+							  <th>Recent</th>
+							</tr>
+							<tr>
+								<td>No Recent Feedback</td>
+							</tr>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -11,7 +11,7 @@
 
 body {
 	color: white;
-	background: black;
+	background: #D6E6FF;
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 }
 
@@ -115,53 +115,75 @@ nav ul li a {
 
 #container {
 	min-height: 100%;
+	margin-bottom: 200px;
 }
 
-#wrapper {
-	background: url("Photo/Menu.jpg") no-repeat;
-	background-size: cover;
-	height: 100vh;
+#main-content {
+	overflow: auto;
+	color: black;
 }
 
-#wrapper .center-text {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	user-select: none;
-}
-
-.center-text h1 {
-	color: white;
-	font-size: 70px;
-	font-weight: bold;
+#message {
+	background: transparent;
 	width: 900px;
+	margin: 50px auto;
+}
+
+#main-content h2 {
+	padding: 10px;
+	font-size: 40px;
 	text-align: center;
 }
 
-.center-text h2 {
-	color: white;
-	font-size: 70px;
-	font-weight: bold;
-	width: 860px;
+#main-content h5 {
+	padding: 10px;
+	font-size: 20px;
 	text-align: center;
 }
 
-.center-text .btn {
-	margin: 35px 43%;
+.title {
+	width: 30%;
+	height: 30px;
+	font-size: 15px;
 }
 
-.btn button {
-	height: 50px;
-	width: 150px;
-	font-size: 18px;
-	font-weight: bold;
-	color: white;
-	background: red;
-	border: 1px solid #cc0000;
-	outline: none;
+#message textarea {
+	width: 900px;
+	height: 200px;
+}
+
+.btn {
+	width: 100px;
+	padding: 10px 20px;
 	cursor: pointer;
-	border-radius: 25px;
+	display: block;
+	float: right;
+	background: linear-gradient(to right, #00ffff, #f1f1f1);
+	border: 0;
+	border-radius: 30px;
+	outline: none;
+}
+
+.faq {
+	width: 1200px;
+	background: white;
+	margin: 100px auto 0;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.faq h3 {
+	font-size: 20px;
+	width: 100%;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+}
+
+.faq table {
+	width: 100%;
+	
 }
 
 #footer {

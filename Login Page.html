@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="Main Page.css" type="text/css">
 	<title>Inazuma</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Login Page.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/x-icon" href="../Header/New Logo.png">
 </head>
 
@@ -15,7 +15,7 @@
 			<label for="check" class="checkbutton">
 				<h3>Menu</h3>
 			</label>
-			<a href="Main Page.html"><img src="../Header/Inazuma.png" alt="Logo" class="logo"></a>
+			<a href="../Main Page/Main Page.html"><img src="../Header/Inazuma.png" alt="Logo" class="logo"></a>
 			<ul class="nav-menu">
 				<li><a href="../Content Page/Content Page.html" class="nav-item">Content</a></li>
 				<li><a href="../Request Page/Request Page.html" class="nav-item">Request</a></li>
@@ -27,15 +27,50 @@
 		</nav>
 	</header>
 	<div id="container">
-		<div id="wrapper">
-			<div class="center-text">
-				<h1>Welcome To Inazuma</h1>
-				<h2>Learn New Things</h2>
-				<div class="btn">
-					<button>Explore</button>
-				</div>
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Log in</button>
+				<button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
 			</div>
+			<div class="icons">
+				<img src="Photo/facebook.png" alt="">
+				<img src="Photo/google.png" alt="">
+				<img src="Photo/twitter.png" alt="">
+			</div>
+			<form id="login" class="form-text">
+				<input type="text" class="form-field" placeholder="Username" required>
+				<input type="text" class="form-field" placeholder="Password" required>
+				<input type="checkbox" class="check"><span>Remember Me</span>
+				<button type="submit" class="submit-btn">Log In</button>
+			</form>
+			<form id="signup" class="form-text">
+				<input type="text" class="form-field" placeholder="Username" required>
+				<input type="text" class="form-field" placeholder="E-mail" required>
+				<input type="text" class="form-field" placeholder="Password" required>
+				<input type="checkbox" class="check"><span>I agree to the terms & conditions</span>
+				<button type="submit" class="submit-btn">Sign Up</button>
+			</form>
 		</div>
+		
+		<script>
+			var x = document.getElementById("login");
+			var y = document.getElementById("signup");
+			var z = document.getElementById("btn");
+			
+			function signup() {
+				x.style.left = "-400px";
+				y.style.left = "50px";
+				z.style.left = "110px"
+			}
+			
+			function login() {
+				x.style.left = "50px";
+				y.style.left = "450px";
+				z.style.left = "0";
+			}
+			
+		</script>
 	</div>
 	<footer id="footer">
 		<div class="main-content">

@@ -2,10 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="Main Page.css" type="text/css">
 	<title>Inazuma</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="../Header/New Logo.png">
+	<link rel="stylesheet" href="Request Page.css" type="text/css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
 			<label for="check" class="checkbutton">
 				<h3>Menu</h3>
 			</label>
-			<a href="Main Page.html"><img src="../Header/Inazuma.png" alt="Logo" class="logo"></a>
+			<a href="../Main Page/Main Page.html"><img src="../Header/Inazuma.png" alt="Logo" class="logo"></a>
 			<ul class="nav-menu">
 				<li><a href="../Content Page/Content Page.html" class="nav-item">Content</a></li>
 				<li><a href="../Request Page/Request Page.html" class="nav-item">Request</a></li>
@@ -27,13 +27,41 @@
 		</nav>
 	</header>
 	<div id="container">
-		<div id="wrapper">
-			<div class="center-text">
-				<h1>Welcome To Inazuma</h1>
-				<h2>Learn New Things</h2>
-				<div class="btn">
-					<button>Explore</button>
-				</div>
+		<div id="content">
+			<h1>Upload Request</h1>
+			<div class="register">
+				<form method="post" id="register">
+					<br>
+					<input type="text" name="Fname" id="name" placeholder="Username">
+					<br>
+					<br>
+					<div class="request">
+						<div>
+							<form>
+								<div class="msg">
+									<div class="text">Content Name</div>
+									<textarea rows="5" cols="25" required></textarea>
+								</div>
+							</form>
+						</div>
+					</div>
+					<br><br>
+					<label>Content Type</label>
+					<select id="ph">
+						<option>Film</option>
+						<option>Games</option>
+						<option>Books</option>
+					</select>
+					<br>
+					<br>
+					<label>Read/Watch/Play</label>
+					<br>
+					<input type="checkbox" checked="checked" name="check">Will
+					<input type="checkbox" checked="checked" name="check">Wouldn't
+					<input type="checkbox" checked="checked" name="check">Maybe
+					<br><br>
+					<button type="submit" class="sub">Submit</button>
+				</form>
 			</div>
 		</div>
 	</div>

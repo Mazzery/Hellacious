@@ -11,7 +11,7 @@
 
 body {
 	color: white;
-	background: black;
+	background: #D6E6FF;
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 }
 
@@ -117,55 +117,97 @@ nav ul li a {
 	min-height: 100%;
 }
 
-#wrapper {
-	background: url("Photo/Menu.jpg") no-repeat;
-	background-size: cover;
+.blog {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 100vh;
 }
 
-#wrapper .center-text {
+.blog-card {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	user-select: none;
-}
-
-.center-text h1 {
-	color: white;
-	font-size: 70px;
-	font-weight: bold;
-	width: 900px;
-	text-align: center;
-}
-
-.center-text h2 {
-	color: white;
-	font-size: 70px;
-	font-weight: bold;
-	width: 860px;
-	text-align: center;
-}
-
-.center-text .btn {
-	margin: 35px 43%;
-}
-
-.btn button {
-	height: 50px;
-	width: 150px;
-	font-size: 18px;
-	font-weight: bold;
-	color: white;
-	background: red;
-	border: 1px solid #cc0000;
-	outline: none;
-	cursor: pointer;
+	height: 470px;
+	width: 95%;
+	max-width: 1000px;
+	background: white;
 	border-radius: 25px;
+	box-shadow: 0 10px 50px black;
+}
+
+.blog-card .inner-part {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 25px;
+	height: 460px;
+}
+
+.inner-part .img {
+	height: 260px;
+	width: 300px;
+	overflow: hidden;
+	flex-shrink: 0;
+	border-radius: 20px;
+	box-shadow: 2px 3px 15px black;
+}
+
+.img img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+.blog-item {
+	padding: 0 30px 0 35px;
+	width: 530px;
+	margin-left: 50px;
+}
+
+.blog-item span {
+	display: block;
+	color: #7b7992;
+	margin-bottom: 10px;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.blog-item .title {
+	font-size: 30px;
+	font-weight: bold;
+	color: #0d0925;
+	margin-bottom: 10px;
+}
+
+.blog-item .text {
+	font-size: 19px;
+	color: #4e4a67;
+	margin-bottom: 10px;
+	line-height: 1.5em;
+	text-align: justify;
+}
+
+.blog-item button {
+	display: inline-flex;
+	padding: 15px 20px;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff0e6;
+	font-weight: 600;
+	letter-spacing: 1px;
+	border-radius: 50px;
+	border: 1px solid #fd3535;
+	cursor: pointer;
+	background: black;
+	outline: none;
+}
+
+.blog-item button:hover {
+	background: red;
 }
 
 #footer {
-	position: relative;
+	position:static;
 	margin-top: -100px;
 	clear: both;
 }
